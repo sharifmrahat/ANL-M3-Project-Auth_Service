@@ -1,15 +1,15 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
-    },
-    "auditLog": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/successes/.3aaecc24032bc88be183ace07f26c85b3b8d6df2-audit.json",
-    "files": [
-        {
-            "date": 1685890452882,
-            "name": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/successes/phu-2023-04-06-20-error.log",
-            "hash": "2a1f77e09202f8f6f9082809eeb75f4ad2c304e10de4320d1970ac26918407ec"
-        }
-    ],
-    "hashType": "sha256"
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/successes/.3aaecc24032bc88be183ace07f26c85b3b8d6df2-audit.json",
+  "files": [
+    {
+      "date": 1685890452882,
+      "name": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/successes/phu-2023-04-06-20-error.log",
+      "hash": "2a1f77e09202f8f6f9082809eeb75f4ad2c304e10de4320d1970ac26918407ec"
+    }
+  ],
+  "hashType": "sha256"
 }
