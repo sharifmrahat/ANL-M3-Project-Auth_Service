@@ -1,26 +1,18 @@
-import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
-import dotenv from 'dotenv'
-import { UserRoutes } from './app/modules/user/user.route'
-
+import express, { Application } from 'express'
+import globalErrorHandler from './app/middlewares/globalErrorHandler'
+import routes from './app/routes'
 const app: Application = express()
 
-//cors
 app.use(cors())
 
-//dotenv
-dotenv.config()
-
-//parse data
-
+//parser
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-//api-endpoints
-app.use('/api/v1/users/', UserRoutes)
+app.use('/api/v1/', routes)
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Application is running')
-})
+//global error handler
+app.use(globalErrorHandler)
 
 export default app
