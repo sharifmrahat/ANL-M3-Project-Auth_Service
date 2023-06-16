@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import path from 'path'
 import { createLogger, format, transports } from 'winston'
 import DailyRotateFile from 'winston-daily-rotate-file'
@@ -10,12 +11,12 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
   const hour = date.getHours()
   const minutes = date.getMinutes()
   const seconds = date.getSeconds()
-  return `${date.toDateString()} ${hour}:${minutes}:${seconds} - [${label}] ${level}: ${message}`
+  return `${date.toDateString()} ${hour}:${minutes}:${seconds} } [${label}] ${level}: ${message}`
 })
 
 const logger = createLogger({
   level: 'info',
-  format: combine(label({ label: 'INFO' }), timestamp(), myFormat),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -36,7 +37,7 @@ const logger = createLogger({
 
 const errorLogger = createLogger({
   level: 'error',
-  format: combine(label({ label: 'ERROR' }), timestamp(), myFormat),
+  format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
