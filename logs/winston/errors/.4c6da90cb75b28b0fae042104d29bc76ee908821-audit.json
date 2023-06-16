@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/errors/.4c6da90cb75b28b0fae042104d29bc76ee908821-audit.json",
+    "files": [
+        {
+            "date": 1686924271796,
+            "name": "/media/rahat/VolumeDrive/Programming-Hero/Apollo-NL/Mission-3 (SDLC and Project)/Project/UM-Auth-Service/logs/winston/errors/phu-2023-16-06-20-error.log",
+            "hash": "267e362b6776631f661ff0186b1a45e2dced51315b02248ce19b8c080bde4d89"
+        }
+    ],
+    "hashType": "sha256"
+}
